@@ -38,6 +38,7 @@ jobs:
       - name: Install App dependencies
         run: |
           cd app
+          echo "setuptools<72" > constraints.txt && export PIP_CONSTRAINT=constraints.txt
           pip install setuptools==71.1.0 && poetry install --sync --no-interaction --no-root
       - name: Run App unit tests
         run: |
