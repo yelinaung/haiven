@@ -34,6 +34,7 @@ uvicorn = "^0.30.3"
 python-dotenv = "^1.0.1"
 toml = "^0.10.2"
 setuptools = "<72.0.0"
+ffmpy = {git = "https://github.com/EuDs63/ffmpy.git"}
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.1"

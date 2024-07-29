@@ -787,9 +787,14 @@ version = "0.3.2"
 description = "A simple Python wrapper for ffmpeg"
 optional = false
 python-versions = "*"
-files = [
-    {file = "ffmpy-0.3.2.tar.gz", hash = "sha256:475ebfff1044661b8d969349dbcd2db9bf56d3ee78c0627e324769b49a27a78f"},
-]
+files = []
+develop = false
+
+[package.source]
+type = "git"
+url = "https://github.com/EuDs63/ffmpy.git"
+reference = "HEAD"
+resolved_reference = "333a19ee4d21f32537c0508aa1942ef1aa7afe24"
 
 [[package]]
 name = "filelock"
@@ -4183,4 +4188,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "~3.11"
-content-hash = "e30d828a920408ca40b9a1356ef713084258a6813d6ef99a772b5dce30395930"
+content-hash = "a807d91f604014c53a1dcb4271b7cd2935001b9c6ded47ac7c9c9abb6a6075d5"
