@@ -39,7 +39,8 @@ jobs:
         run: |
           cd app
           echo "setuptools<72" > constraints.txt && export PIP_CONSTRAINT=constraints.txt
-          pip3 install setuptools==71.1.0 && poetry install --sync --no-interaction --no-root
+          rm poetry.lock
+          pip3 install setuptools==71.1.0 && poetry install --sync --no-interaction --no-root 
       - name: Run App unit tests
         run: |
           cd app
